@@ -1,0 +1,6 @@
+﻿  Campominado.cpp
+C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(10,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(39,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(39,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(14,9): warning C4101: 'grid': unreferenced local variable
+  Campominado.vcxproj -> C:\Users\Valar\source\repos\Valarr\mine\Debug\Campominado.exe
