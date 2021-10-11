@@ -1,5 +1,5 @@
 ﻿  Campominado.cpp
-C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(10,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(76,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(76,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(11,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(86,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Valar\source\repos\Valarr\mine\Campominado\Campominado.cpp(86,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Campominado.vcxproj -> C:\Users\Valar\source\repos\Valarr\mine\Debug\Campominado.exe

@@ -7,28 +7,34 @@ using namespace sf;
 
 
 int main(){
-    srand(time(0));
-    RenderWindow app(VideoMode(400, 400), "Inicia o Campo Minado");
+    //inicia o rng(random number generator)
+    srand(time(0)); 
+    //2D drawing
+    RenderWindow app(VideoMode(400, 400), "Inicia o Campo Minado"); 
 
     int w = 32;
-    int grid[12][12];
-    int sgrid[12][12];
+    //tem o grid completo
+    int grid[11][11];
+    //mostra o gird pro usuario
+    int sgrid[11][11];
 
     Texture texture;
+    //carrega a textura da imagem com todos os icones
     texture.loadFromFile("img/icones.jpg");
-    Sprite s(texture);
+    //separa a textura em sprites
+    Sprite s(texture); 
 
-    for (int i = 1; i <= 10; i++) {
-        for (int j = 0; j <= 10; j++) {
-            sgrid[i][j]=10;
-        }
-    }
+    //preenche as matrizes com sprite
     for (int i = 1; i <= 10; i++)
         for (int j = 1; j <= 10; j++) {
             sgrid[i][j] = 10;
 
-            if (rand() % 5 == 0) grid[i][j] = 9;
-            else grid[i][j] = 0;
+            if (rand() % 5 == 0) {
+                grid[i][j] = 9;//preenche com bomba
+            }
+            else {
+                grid[i][j] = 0;//preenche com nada
+            }
         }
 
     for (int i = 1; i <= 10; i++)
@@ -61,8 +67,14 @@ int main(){
                 app.close();
 
             if (e.type == Event::MouseButtonPressed)
+                //mostra o que tem na celula clicada
                 if (e.key.code == Mouse::Left) sgrid[x][y] = grid[x][y];
+                //marca com flag a celula clicada
                 else if (e.key.code == Mouse::Right) sgrid[x][y] = 11;
+/*          Tentativa de power up/releva o tabuleiro quando apertar a barra de espaço
+            if (e.type == Event::KeyPressed) 
+                if(e.key.code == Keyboard::Space) app.draw(s);
+*/                
 
         }
 
